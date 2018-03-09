@@ -43,15 +43,18 @@
                         <h1 class="A7" align="center">Login Artists</h1>
                         <div id="loginbox" class="box">
                             <i id="icon" class="fa fa-power-off"></i>
-                            <div id="form-container">
-                                <input class="text" id="logintext" type="text" placeholder="Email" size="27"><i id="logintext" class="clear icon fa fa-times"></i>
-                                <br>
-                                <br>
-                                <input class="text" id="loginpass" type="password" placeholder="Password" size="27"><i id="loginpass" class="clear icon fa fa-times"></i>
-                                <br>
-                                <br>
-                                <a ><button class="btn draw-border">Fans!</button>
-                            </div>
+                            <form method="POST" action="/login">
+                                @csrf
+                                <div id="form-container">
+                                    <input class="text" id="logintext" type="text" placeholder="Username" size="27" name="username"><i id="logintext" class="clear icon fa fa-times"></i>
+                                    <br>
+                                    <br>
+                                    <input class="text" id="loginpass" type="password" placeholder="Password" size="27" name="password"><i id="loginpass" class="clear icon fa fa-times"></i>
+                                    <br>
+                                    <br>
+                                    <button type="submit" class="btn draw-border">Fans!</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -62,15 +65,18 @@
                         <h1 class="A7" align="center">Login Fans</h1>
                         <div id="loginboxA" class="box">
                             <i id="iconA" class="fa fa-power-off"></i>
-                            <div id="form-container">
-                                <input class="text" id="logintextA" type="text" placeholder="Email" size="27"><i id="logintextA" class="clear icon fa fa-times"></i>
-                                <br>
-                                <br>
-                                <input class="text" id="loginpassA" type="password" placeholder="Password" size="27"><i id="loginpassA" class="clear icon fa fa-times"></i>
-                                <br>
-                                <br>
-                                <a ><button class="btn draw-border">Fans!</button>
-                            </div>
+                            <form method="POST" action="/login">
+                                @csrf
+                                <div id="form-container">
+                                    <input class="text" id="logintextA" type="text" placeholder="Username" name="username" size="27"><i id="logintextA" class="clear icon fa fa-times"></i>
+                                    <br>
+                                    <br>
+                                    <input class="text" id="loginpassA" type="password" placeholder="Password" size="27" name="password"><i id="loginpassA" class="clear icon fa fa-times"></i>
+                                    <br>
+                                    <br>
+                                    <button type="submit" class="btn draw-border">Fans!</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>

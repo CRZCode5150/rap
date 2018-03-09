@@ -25,7 +25,7 @@
           <div class="card-body">
               <h2 class="card-title">Fan Info</h2>
                 <form method="POST" action="/register">
-                    @crsf
+                    @csrf
 
                     <input class="form control text-danger text-center" type="text" name="username" value="" maxlength="100" placeholder="Create Your Fan Username" /></br>
                     </br>
@@ -44,7 +44,7 @@
                     <input class="form control text-danger text-center" type="text" name="ConfirmYourPassword" value="" maxlength="100" placeholder="Confirm your password"/></br>
                     <input type="hidden" name="isartist" value="0">
 
-                    </br><a href="#" class="btn btn-primary">Submit</a>
+                </br><button href="#" type="submit" class="btn btn-primary">Submit</button>
                 </form>
          </div>
      </div>

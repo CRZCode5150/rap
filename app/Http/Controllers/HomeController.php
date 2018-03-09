@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\ConnectionOrFavorite;
 use App\User;
 use Hash;
 use Auth;
@@ -24,14 +25,25 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('home');
+        $this->middleware('auth');
+        $query = $request->query();
+
+        $results = [];
+        if (!empty($query)) {
+            $results = User::where($query)->get();
+        }
+
+        $data = [
+            'results' => $results
+        ];
+
+        return view('home')->with($results);
     }
 
     public function register(Request $request)
     {
-
         if ($request->CreateYourPassword != $request->ConfirmYourPassword) {
             return back();
         }
@@ -52,5 +64,45 @@ class HomeController extends Controller
             // Authentication passed...
             return redirect()->intended('home');
         }
+    }
+
+    public function login(Request $request)
+    {
+        if (Auth::attempt(['username' => $request->username, 'password' => $request->password])) {
+            // Authentication passed.
+            return redirect()->intended('home');
+        } else {
+            return back();
+        }
+    }
+
+    public function viewProfile($id)
+    {
+        $user = User::find($id);
+        $connectionsOrFavorites = ConnectionOrFavorite::where('sender', '=', Auth::id())
+            ->orWhere('receiver', '=', Auth::id())
+            ->with('sender', 'receiver')
+            ->get();
+
+        $data = [
+            'user' => $user,
+            'connectionsOrFavorites' => $connectionsOrFavorites
+        ];
+
+        return view('profile')->with($data);
+    }
+
+    public function addRelationship($senderId, $receiverId)
+    {
+        $newRecord = new ConnectionOrFavorite;
+        $newRecord->sender = $senderId;
+        $newRecord->receiver = $receiverId;
+        $newRecord->save();
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/');
     }
 }
