@@ -27,6 +27,6 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
-Auth::routes();
+Route::post('/register', 'HomeController@register');
 
 Route::get('/home', 'HomeController@index')->name('home');
