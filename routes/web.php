@@ -15,6 +15,18 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('signupartist', function () {
+    return view('signupartist');
+});
+
+Route::get('signupfan', function () {
+    return view('signupfan');
+});
+
+Route::get('profile', function () {
+    return view('profile');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
