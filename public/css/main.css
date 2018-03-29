@@ -1,0 +1,37 @@
+body{
+
+    background-color: black;
+
+
+}
+/* ARTIST/FAN SIGN UP PAGE CSS */
+.titlePage{
+    padding-top: 25px;
+     text-align: center;
+     color: white;
+
+}
+/* Image */
+.eminem{
+    width: 69%;
+}
+.filtered {
+    filter: drop-shadow(5px 5px 77px gray);
+    width: 73%;
+}
+/* Sign up Info card  */
+.card{
+     margin-left: 35px;
+     text-align: center;
+     color: white;
+     /* background-color: #440b08; */
+     font-size: 20px;
+     background-image: url(/Images/MusicGifBackground.gif);
+     background-image: 10%;
+
+ /* filter: opacity(0.3); */
+
+}
+.form {
+    width: 20%;
+}
