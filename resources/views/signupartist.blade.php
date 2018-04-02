@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/main2.css" />
     <title>Artist Registration Page</title>
   </head>
 
@@ -26,7 +26,7 @@
               <h2 class="card-title">Artist Info</h2>
                 <form>
 
-                
+
                 <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Create Your Artist Username" /></br>
                 </br>
                 <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="First Name"/></br>
@@ -39,9 +39,9 @@
                 </br>
                 <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Zipcode"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Create your password"/></br>
+                <input class="form control text-danger text-center" type="password" name="last_name" value="" maxlength="100" placeholder="Create your password"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Confirm your password"/></br>
+                <input class="form control text-danger text-center" type="password" name="last_name" value="" maxlength="100" placeholder="Confirm your password"/></br>
 
 
                 </br><a href="#" class="btn btn-primary">Submit</a>

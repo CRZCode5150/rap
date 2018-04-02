@@ -15,18 +15,21 @@ Route::get('/', function () {
     return view('landingpage');
 });
 
-Route::get('signupartist', function () {
+Route::get('/signupartist', function () {
     return view('signupartist');
 });
 
-Route::get('signupfan', function () {
+Route::get('/signupfan', function () {
     return view('signupfan');
 });
 
-Route::get('profile', function () {
+Route::get('/profile', function () {
     return view('profile');
 });
 
+Route::get('/profile', function () {
+    return view('profile');
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
