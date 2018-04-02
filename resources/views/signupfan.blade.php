@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/main2.css" />
     <title>Artist Registration Page</title>
   </head>
 
@@ -25,7 +25,7 @@
           <div class="card-body">
               <h2 class="card-title">Fan Info</h2>
                 <form>
-                        
+
                     <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Create Your Fan Username" /></br>
                     </br>
                     <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="First Name"/></br>
