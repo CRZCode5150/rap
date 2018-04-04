@@ -24,7 +24,7 @@
       <div class="card" style="width: 84rem;">
           <div class="card-body">
               <h2 class="card-title">Fan Info</h2>
-                <form>
+                <form method="POST" action="{{ route('register') }}">
 
                     <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Create Your Fan Username" /></br>
                     </br>
