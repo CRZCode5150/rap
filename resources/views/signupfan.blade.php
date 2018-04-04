@@ -26,7 +26,8 @@
               <h2 class="card-title">Fan Info</h2>
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
-                    <input class="form control text-danger text-center" type="text" name="username" value="" maxlength="100" placeholder="Create Your Fan Username" /></br>
+
+                    <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Create Your Fan Username" /></br>
                     </br>
                     <input class="form control text-danger text-center" type="text" name="firstname" value="" maxlength="100" placeholder="First Name"/></br>
                     </br>
