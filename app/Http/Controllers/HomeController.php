@@ -44,6 +44,7 @@ class HomeController extends Controller
         $newUser->city = $request->city;
         $newUser->state = $request->state;
         $newUser->zipcode = $request->zipcode;
+        $newUser->isartist = $request->isartist;
         $newUser->save();
 
         if (Auth::attempt(['username' => $request->username, 'password' => $password])) {
