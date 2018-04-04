@@ -27,6 +27,10 @@ Route::get('/profile', function () {
     return view('profile');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
+
 Route::post('/register', 'HomeController@register');
 
 Route::get('/home', 'HomeController@index')->name('home');
