@@ -25,22 +25,22 @@
           <div class="card-body">
               <h2 class="card-title">Artist Info</h2>
               <form method="POST" action="{{ route('register') }}">
-
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Create Your Artist Username" /></br>
+                  @csrf
+                <input class="form control text-danger text-center" type="text" name="username" value="" maxlength="100" placeholder="Create Your Artist Username" /></br>
                 </br>
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="First Name"/></br>
+                <input class="form control text-danger text-center" type="text" name="firstname" value="" maxlength="100" placeholder="First Name"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Last Name"/></br>
+                <input class="form control text-danger text-center" type="text" name="lastname" value="" maxlength="100" placeholder="Last Name"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="City"/></br>
+                <input class="form control text-danger text-center" type="text" name="city" value="" maxlength="100" placeholder="City"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="State"/></br>
+                <input class="form control text-danger text-center" type="text" name="state" value="" maxlength="100" placeholder="State"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="text" name="last_name" value="" maxlength="100" placeholder="Zipcode"/></br>
+                <input class="form control text-danger text-center" type="text" name="zipcode" value="" maxlength="100" placeholder="Zipcode"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="password" name="last_name" value="" maxlength="100" placeholder="Create your password"/></br>
+                <input class="form control text-danger text-center" type="password" name="CreateYourPassword" value="" maxlength="100" placeholder="Create your password"/></br>
                 </br>
-                <input class="form control text-danger text-center" type="password" name="last_name" value="" maxlength="100" placeholder="Confirm your password"/></br>
+                <input class="form control text-danger text-center" type="password" name="ConfirmYourPassword" value="" maxlength="100" placeholder="Confirm your password"/></br>
 
 
                 </br><a href="#" class="btn btn-primary">Submit</a>
