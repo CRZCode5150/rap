@@ -30,7 +30,7 @@ class HomeController extends Controller
     public function register(Request $request)
     {
         $newUser = new User;
-        $newUser->name = $request->username;
+        $newUser->name = $request->username
         // Get all that data that the user inputted
         // log in
         // go to the homepage
