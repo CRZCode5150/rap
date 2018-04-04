@@ -17,6 +17,7 @@ class LoginController extends Controller
     | to conveniently provide its functionality to your applications.
     |
     */
+    protected $username = 'username';
 
     use AuthenticatesUsers;
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\User;
 use Hash;
+use Auth;
 
 class HomeController extends Controller
 {
@@ -47,7 +48,7 @@ class HomeController extends Controller
         $newUser->isartist = $request->isartist;
         $newUser->save();
 
-        if (Auth::attempt(['username' => $request->username, 'password' => $password])) {
+        if (Auth::attempt(['username' => $request->username, 'password' => $request->CreateYourPassword])) {
             // Authentication passed...
             return redirect()->intended('home');
         }
