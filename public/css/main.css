@@ -76,6 +76,7 @@ body {
 .A7{
     font-family: 'Joti One', cursive;
     font-size: 30px;
+    color: white !important;
 }
 
 
@@ -96,7 +97,7 @@ header{
 
 .box{
   border-radius:25px;
-  background:#888;
+  background:red;
   padding:10px 10px;
   padding-left:16px;
   width:28px;
@@ -110,7 +111,7 @@ header{
 .text{
   margin-left:15px;
   margin-top:3px;
-  background:#37D;
+  background:black;
   color:white;
   border:none;
   outline:transparent;
@@ -128,7 +129,7 @@ header{
 }
 
 .showbox {
-  background:#39F;
+  background:red;
   width:400px;
   height:50px;
   transition-delay:0s;

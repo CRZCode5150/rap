@@ -20,11 +20,11 @@
             <div class="A2 row text-center">
                 <div class="A3 col-6">
                     <h1>Sign Up as a Artist!</h1>
-                    <a href="/signupartist"><button type="button" class="btn btn-danger">Artist</button></a>
+                    <a href="/signupartist"><button type="button" class="A3 btn btn-danger">Count me in!</button></a>
                 </div>
                 <div class="A3 col-6">
                     <h1>Sign Up as a Fan!</h1>
-                    <a href="/signupfan"><button type="button" class="A3 btn btn-danger">Fans</button> </a>
+                    <a href="/signupfan"><button type="button" class="A3 btn btn-danger">Lets go!</button> </a>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                                 <input class="text" id="loginpass" type="password" placeholder="Password" size="27"><i id="loginpass" class="clear icon fa fa-times"></i>
                                 <br>
                                 <br>
-                                <a href="/signupfan"><button class="btn draw-border">Fans!</button>
+                                <a ><button class="btn draw-border">Fans!</button>
                             </div>
                         </div>
                     </div>
@@ -69,19 +69,16 @@
                                 <input class="text" id="loginpassA" type="password" placeholder="Password" size="27"><i id="loginpassA" class="clear icon fa fa-times"></i>
                                 <br>
                                 <br>
-                                <a <button class="btn draw-border">Fans!</button>
+                                <a ><button class="btn draw-border">Fans!</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 </div>
-</div>
+
 
 
 
