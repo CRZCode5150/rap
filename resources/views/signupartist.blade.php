@@ -44,7 +44,7 @@
                 <input class="form control text-danger text-center" type="password" name="ConfirmYourPassword" value="" maxlength="100" placeholder="Confirm your password"/></br>
                 <input type="hidden" name="isartist" value="1">
 
-            </br><button type="submit" class="btn btn-primary">Submit</button>
+                </br><button type="submit" class="btn btn-primary">Submit</button>
                 </form>
          </div>
      </div>
