@@ -26,9 +26,7 @@ Route::post('/register', 'HomeController@register');
 Route::post('/login', 'HomeController@login');
 
 // TODO - Profile Edit Capabilities
-
-// TODO - Fans can favorite Artists
-// TODO - Artists can connect with 1 another
+// TODO - Error Logic
 
 // After Logging In
 Route::get('/home', 'HomeController@index')->name('home');
