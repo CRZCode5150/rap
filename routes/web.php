@@ -21,6 +21,9 @@ Route::get('/signupartist', function () {
 Route::get('/signupfan', function () {
     return view('signupfan');
 });
+Route::get('/profile', function () {
+    return view('profile');
+});
 
 Route::post('/register', 'HomeController@register');
 Route::post('/login', 'HomeController@login');
