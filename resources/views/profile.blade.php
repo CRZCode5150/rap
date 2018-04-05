@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
 
 <head>
@@ -9,31 +10,66 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Profile Page</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="profile">
-            <div class="profile__avatar"></div>
-            <div class="profile__description">
-                <span class="profile__description__name">Nastya Kusakina</span>
-                <span class="profile__description__info">Web Developer</span>
-            </div>
-            <div class="profile__social">
-                <div class="profile__social__icon profile__social__icon--fb">
-                    <i class="fab fa-facebook"></i>
-                </div>
-                <div class="profile__social__icon profile__social__icon--in">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <div class="profile__social__icon profile__social__icon--tw">
-                    <i class="fab fa-twitter"></i>
-                </div>
-            </div>
-        </div>
-    </div>
+    <style>
 
+body{
+    background-color: black;
+    background-image: url(Images/ProfilePageBackground.gif);
+     background-size:100%;
+     margin-top:225px;
+     background-repeat: no-repeat;
+}
+
+    </style>
+</br>
+    <div class="container">
+        <div class="row">
+                <div class="col text-center center text-white">
+
+                    <img src="/images/mic.jpg" class="rounded-circle" width="300px" height="300px"/></br></br></br></br></br>
+
+                    <p>
+                        Your connections
+                    </p>
+                </div>
+        </div>
+
+        <table class="table table-striped table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
