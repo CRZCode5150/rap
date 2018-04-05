@@ -22,6 +22,7 @@ body{
      background-size:100%;
      margin-top:225px;
      background-repeat: no-repeat;
+     
 }
 
     </style>

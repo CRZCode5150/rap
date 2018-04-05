@@ -83,7 +83,7 @@ class HomeController extends Controller
             ->orWhere('receiver', '=', Auth::id())
             ->with('sender', 'receiver')
             ->get();
-
+ 
         $data = [
             'user' => $user,
             'connectionsOrFavorites' => $connectionsOrFavorites
