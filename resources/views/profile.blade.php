@@ -19,27 +19,52 @@
 body{
     background-color: black;
     background-image: url(Images/ProfilePageBackground.gif);
-     background-size:100%;
-     margin-top:225px;
+     background-size:75%;
+     margin-top:12%;
      background-repeat: no-repeat;
 }
+img{
 
+    margin: 1%;
+    margin-left: 37%;
+}
+h3{
+color:white;
+text-align: center;
+}
+
+p{
+margin-top:29px;
+}
+table{
+    margin-top: 4%;
+}
     </style>
+                {{-- Profile pic --}}
 </br>
     <div class="container">
         <div class="row">
-                <div class="col text-center center text-white">
+                <div class="col text-center text-white">
 
-                    <img src="/images/mic.jpg" class="rounded-circle" width="300px" height="300px"/></br></br></br></br></br>
+                    <img src="/images/mic.jpg" class="rounded-circle" width="200px" height="200px"/></br></br></br></br></br>
 
-                    <p>
-                        Your connections
-                    </p>
                 </div>
+
+                <div class="col text-center text-white">
+
+                    <p>UserName</p>
+                    <p>FirstName, LastName</p>
+                    <p>City, State, Zipcode</p>
+
+                </div>
+
+                {{-- table --}}
         </div>
 
-        <table class="table table-striped table-dark">
+        <table class="table table-striped table-dark text-center">
+
           <thead>
+              <h3>Yourconnections</h3>
             <tr>
               <th scope="col">#</th>
               <th scope="col">First</th>
