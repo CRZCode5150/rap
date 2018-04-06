@@ -52,7 +52,7 @@
                                     <input class="text" id="loginpass" type="password" placeholder="Password" size="27" name="password"><i id="loginpass" class="clear icon fa fa-times"></i>
                                     <br>
                                     <br>
-                                    <button type="submit" class="btn btn-dark draw-border">Fans!</button>
+                                    <button type="submit" class="btn btn-dark draw-border">Artists!</button>
                                 </div>
                             </form>
                         </div>

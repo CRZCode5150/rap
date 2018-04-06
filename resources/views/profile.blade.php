@@ -46,15 +46,15 @@ table{
         <div class="row">
                 <div class="col text-center text-white">
 
-                    <img src="/images/mic.jpg" class="rounded-circle" width="200px" height="200px"/></br></br></br></br></br>
+                    <img src="/images/mic.jpg" class="rounded-circle" width="200px" height="200px"{{$user->image_path}}/></br></br></br></br></br>
 
                 </div>
 
-                <div class="col text-center text-white">
+                <div class="col text-center text-white text-capitalize">
 
-                    <p>UserName</p>
-                    <p>FirstName, LastName</p>
-                    <p>City, State, Zipcode</p>
+                    <p>{{$user->username}}</p>
+                    <p>{{$user->firstname}} {{$user->lastname}}</p>
+                    <p>{{$user->city}}, {{$user->state}} {{$user->zipcode}}</p>
 
                 </div>
 
@@ -64,19 +64,26 @@ table{
         <table class="table table-striped table-dark text-center">
 
           <thead>
-              <h3>Yourconnections</h3>
+              <h3>Your Connections</h3>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
+              <th scope="col">Username</th>
+              <th scope="col">F.Name</th>
+              <th scope="col">City</th>
+              <th scope="col">State</th>
+              <th scope="col">Zipcode</th>
             </tr>
           </thead>
           <tbody>
+
             <tr>
               <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
+              <td>{{$user->username}}</td>
+              <td>{{$user->firstname}}</td>
+              <td>{{$user->lastname}}</td>
+              <td>{{$user->city}}</td>
+              <td>{{$user->state}}</td>
+              <td>{{$user->zipcode}}</td>
               <td>@mdo</td>
             </tr>
             <tr>
