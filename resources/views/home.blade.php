@@ -26,7 +26,7 @@
                     <a class="nav-link" href="/profile/{{ Auth::id() }}">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Connections</a>
+                    <a class="nav-link" href="/">Log-Out</a>
                 </li>
             </ul>
         </div>
@@ -34,7 +34,7 @@
     <div class="figure container-fluid">
         <div class="row B2 justify-content-center">
             <div class="movehigher col-6 search-form text-center">
-                <form method="GET" action="/home">
+                    <form method="GET" action="/home">
                     @csrf
                     <h2 id="litt" class="heading">Search Artist</h2>
                     <div class="control-group">
@@ -56,7 +56,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">Zombie Juice</span>
                             <span class="profile__description__info">1/3 of Flatbush Zombies</span>
-                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-dark">Connect</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">Kendrick Lamar</span>
                             <span class="profile__description__info">Top-Dawg-Entertainment</span>
-                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-dark">Connect</button>
                         </div>
                     </div>
                 </div>
@@ -80,14 +80,19 @@
                         <div class="profile__description">
                             <span class="profile__description__name">MF Doom</span>
                             <span class="profile__description__info">Rap's SuperVillian</span>
-                            <button type="button" class="btn btn-dark">Dark</button>
+                            <button type="button" class="btn btn-dark">Connect</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         @if (count($results) > 0)
-            <p> hello!!!!</p>
+            @foreach($results as $artist)
+                <h2 class="content-title">{{$artist->username}} </h2>
+                <p class="content-title">{{$artist->city}}, {{$artist->state}}</p>
+                <button type="button" class="btn btn-secondary" href="">connect</button>
+                <div id="wow"></div>
+            @endforeach
         @endif
     </div>
 

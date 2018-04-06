@@ -324,3 +324,7 @@ body {
     transform: translateY(0);
   }
 }
+
+#wow{
+    border-bottom: 3px solid white;
+}
