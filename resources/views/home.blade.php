@@ -44,7 +44,7 @@
                 </form>
             </div>
         </div>
-        
+        <?php// dump($results); //?>
         <div class="row B1 justify-content-center">
             <h1 id="lit">Featured Artists This Week!</h1>
         </div>
@@ -92,7 +92,6 @@
                 <h2 class="content-title">{{$artist->username}} </h2>
                 <img src="{{$artist->image_path}}">
                 <p class="content-title">{{$artist->city}}, {{$artist->state}}</p>
-                <p class="content-title">{{$artist->Description}}</p>
                 <button type="button" class="btn btn-secondary" href="">connect</button>
                 <div id="wow"></div>
 

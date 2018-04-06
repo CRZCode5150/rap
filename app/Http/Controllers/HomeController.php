@@ -81,9 +81,10 @@ class HomeController extends Controller
         $user = User::find($id);
         $connectionsOrFavorites = ConnectionOrFavorite::where('sender', '=', Auth::id())
             ->orWhere('receiver', '=', Auth::id())
-            ->with('sender', 'receiver')
+            ->with('senderInfo', 'receiverInfo')
             ->get();
 
+        // return $connectionsOrFavorites
         $data = [
             'user' => $user,
             'connectionsOrFavorites' => $connectionsOrFavorites
@@ -99,7 +100,7 @@ class HomeController extends Controller
         $newRecord->receiver = $receiverId;
         $newRecord->save();
 
-        return redirect()->route('profile', ['id' => $receiverId]);
+        return redirect()->route('profile', ['id' => Auth::id()]);
     }
 
     public function logout()
