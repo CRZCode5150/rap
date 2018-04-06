@@ -99,7 +99,7 @@ class HomeController extends Controller
         $newRecord->receiver = $receiverId;
         $newRecord->save();
 
-        return redirect('/profile', ['id' => $receiverId]);
+        return redirect()->route('profile', ['id' => $receiverId]);
     }
 
     public function logout()

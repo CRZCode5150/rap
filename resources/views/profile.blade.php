@@ -41,7 +41,7 @@ body{
     background-color: black;
     background-image: url(Images/ProfilePageBackground.gif);
      background-size:75%;
-     margin-top:12%;
+     /* margin-top:12%; */
      background-repeat: no-repeat;
 }
 img{

@@ -56,7 +56,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">Zombie Juice</span>
                             <span class="profile__description__info">1/3 of Flatbush Zombies</span>
-                            <button type="button" class="btn btn-dark">Connect</button>
+                            <a href="/connect/3"><button type="button" class="btn btn-dark">Connect</button></a>
                         </div>
                     </div>
                 </div>
