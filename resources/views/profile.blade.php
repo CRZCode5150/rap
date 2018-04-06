@@ -1,5 +1,6 @@
 <!doctype html>
 
+
 <html lang="en">
 
 <head>
@@ -46,7 +47,7 @@ table{
         <div class="row">
                 <div class="col text-center text-white">
 
-                    <img src="/images/mic.jpg" class="rounded-circle" width="200px" height="200px"{{$user->image_path}}/></br></br></br></br></br>
+                    <img src={{$user->image_path}} class="rounded-circle" width="200px" height="200px"/></br></br></br></br></br>
 
                 </div>
 
@@ -69,6 +70,7 @@ table{
               <th scope="col">#</th>
               <th scope="col">Username</th>
               <th scope="col">F.Name</th>
+              <th scope="col">L.Name</th>
               <th scope="col">City</th>
               <th scope="col">State</th>
               <th scope="col">Zipcode</th>
@@ -76,7 +78,7 @@ table{
           </thead>
           <tbody>
 
-            <tr>
+            <tr class="text-capitalize">
               <th scope="row">1</th>
               <td>{{$user->username}}</td>
               <td>{{$user->firstname}}</td>
@@ -84,19 +86,19 @@ table{
               <td>{{$user->city}}</td>
               <td>{{$user->state}}</td>
               <td>{{$user->zipcode}}</td>
-              <td>@mdo</td>
+
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td></td>
+              <td></td>
+
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
+              <td></td>
+              <td></td>
+
             </tr>
           </tbody>
         </table>

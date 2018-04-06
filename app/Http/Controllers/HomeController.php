@@ -92,12 +92,14 @@ class HomeController extends Controller
         return view('profile')->with($data);
     }
 
-    public function addRelationship($senderId, $receiverId)
+    public function addRelationship($receiverId)
     {
         $newRecord = new ConnectionOrFavorite;
-        $newRecord->sender = $senderId;
+        $newRecord->sender = Auth::id();
         $newRecord->receiver = $receiverId;
         $newRecord->save();
+
+        return redirect('/profile', ['id' => $receiverId]);
     }
 
     public function logout()
