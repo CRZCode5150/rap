@@ -23,7 +23,7 @@
                     <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/profile">Profile</a>
+                    <a class="nav-link" href="/profile/{{ Auth::id() }}">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Connections</a>
