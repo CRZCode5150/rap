@@ -20,11 +20,11 @@
             <div class="A2 row text-center">
                 <div class="A3 col-6">
                     <h1>Sign Up as a Artist!</h1>
-                    <a href="/signupartist"><button type="button" class="A3 btn btn-danger">Count me in!</button></a>
+                    <a href="/signupartist"><button type="button" class="A3 btn btn-light">Count me in!</button></a>
                 </div>
                 <div class="A3 col-6">
                     <h1>Sign Up as a Fan!</h1>
-                    <a href="/signupfan"><button type="button" class="A3 btn btn-danger">Lets go!</button> </a>
+                    <a href="/signupfan"><button type="button" class="A3 btn btn-light">Lets go!</button> </a>
                 </div>
             </div>
 
@@ -42,7 +42,7 @@
                     <div id="login">
                         <h1 class="A7" align="center">Login Artists</h1>
                         <div id="loginbox" class="box">
-                            <i id="icon" class="fa fa-power-off"></i>
+                            <i id="iconA" class="fa fa-power-off"></i>
                             <form method="POST" action="/login">
                                 @csrf
                                 <div id="form-container">
@@ -52,7 +52,7 @@
                                     <input class="text" id="loginpass" type="password" placeholder="Password" size="27" name="password"><i id="loginpass" class="clear icon fa fa-times"></i>
                                     <br>
                                     <br>
-                                    <button type="submit" class="btn draw-border">Fans!</button>
+                                    <button type="submit" class="btn btn-dark draw-border">Fans!</button>
                                 </div>
                             </form>
                         </div>
@@ -74,7 +74,7 @@
                                     <input class="text" id="loginpassA" type="password" placeholder="Password" size="27" name="password"><i id="loginpassA" class="clear icon fa fa-times"></i>
                                     <br>
                                     <br>
-                                    <button type="submit" class="btn draw-border">Fans!</button>
+                                    <button type="submit" class="btn btn-dark draw-border">Fans!</button>
                                 </div>
                             </form>
                         </div>

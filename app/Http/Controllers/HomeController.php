@@ -28,18 +28,18 @@ class HomeController extends Controller
     public function index(Request $request)
     {
         $this->middleware('auth');
-        $query = $request->query();
+        $query = $request->query('rap');
 
         $results = [];
         if (!empty($query)) {
-            $results = User::where($query)->get();
+            $results = User::where('username', 'like', '%'.$query.'%')->get();
         }
 
         $data = [
             'results' => $results
         ];
 
-        return view('home')->with($results);
+        return view('home')->with($data);
     }
 
     public function register(Request $request)
