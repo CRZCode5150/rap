@@ -32,5 +32,5 @@ Route::post('/login', 'HomeController@login');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile/{id}', 'HomeController@viewProfile');
 Route::get('/favorite/{senderId}/{receiverId}', 'HomeController@addRelationship');
-Route::get('/connect/{senderId}/{receiverId}', 'HomeController@addRelationship');
+Route::get('/connect/{receiverId}', 'HomeController@addRelationship');
 Route::get('/logout', 'HomeController@logout');
