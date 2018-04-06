@@ -12,8 +12,6 @@
 </head>
 
 <body>
-
-        {{-- Nav bar --}}
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Rap-it-Up</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,8 +31,6 @@
             </ul>
         </div>
     </nav>
-
-    {{-- Search bar --}}
     <div class="figure container-fluid">
         <div class="row B2 justify-content-center">
             <div class="movehigher col-6 search-form text-center">
@@ -49,8 +45,6 @@
             </div>
         </div>
         <?php// dump($results); //?>
-
-            {{-- default artist cards display --}}
         <div class="row B1 justify-content-center">
             <h1 id="lit">Featured Artists This Week!</h1>
         </div>
@@ -92,26 +86,18 @@
                 </div>
             </div>
         </div>
+        @if (count($results) > 0)
+            @foreach($results as $artist)
 
-        {{-- Search Results will display here --}}
+                <h2 class="content-title">{{$artist->username}} </h2>
+                <img src="{{$artist->image_path}}">
+                <p class="content-title">{{$artist->city}}, {{$artist->state}}</p>
+                <p class="content-title">{{$artist->Description}}</p>
+                <button type="button" class="btn btn-secondary" href="">connect</button>
+                <div id="wow"></div>
 
-        <div class="container center text-center">
-            <h1>Search Results</h1>
-
-
-                @if (count($results) > 0)
-                    @foreach($results as $artist)
-
-                        <h2 class="content-title">{{$artist->username}} </h2>
-                        <img src="{{$artist->image_path}}">
-                        <p class="content-title">{{$artist->city}}, {{$artist->state}}</p>
-                        <p class="content-title">{{$artist->Description}}</p>
-                        <button type="button" class="btn btn-secondary" href="">connect</button>
-                        <div id="wow"></div>
-
-                    @endforeach
-                @endif
-        </div>
+            @endforeach
+        @endif
     </div>
 
 
