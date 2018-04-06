@@ -44,11 +44,11 @@
                 </form>
             </div>
         </div>
-        <?php dump($results); ?>
+        
         <div class="row B1 justify-content-center">
             <h1 id="lit">Featured Artists This Week!</h1>
         </div>
-        <div class="row">
+        <div class="DX row">
             <div class="col-4">
                 <div class="container">
                     <div class="profile">
@@ -56,7 +56,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">Zombie Juice</span>
                             <span class="profile__description__info">1/3 of Flatbush Zombies</span>
-                            <a href="/connect/3"><button type="button" class="btn btn-dark">Connect</button></a>
+                            <button type="button" class="btn btn-dark">Connect</button>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">Kendrick Lamar</span>
                             <span class="profile__description__info">Top-Dawg-Entertainment</span>
-                            <a href="/connect/4"><button type="button" class="btn btn-dark">Connect</button></a>
+                            <button type="button" class="btn btn-dark">Connect</button>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">MF Doom</span>
                             <span class="profile__description__info">Rap's SuperVillian</span>
-                            <a href="/connect/5"><button type="button" class="btn btn-dark">Connect</button></a>
+                            <button type="button" class="btn btn-dark">Connect</button>
                         </div>
                     </div>
                 </div>
@@ -88,10 +88,14 @@
         </div>
         @if (count($results) > 0)
             @foreach($results as $artist)
+
                 <h2 class="content-title">{{$artist->username}} </h2>
+                <img src="{{$artist->image_path}}">
                 <p class="content-title">{{$artist->city}}, {{$artist->state}}</p>
+                <p class="content-title">{{$artist->Description}}</p>
                 <button type="button" class="btn btn-secondary" href="">connect</button>
                 <div id="wow"></div>
+
             @endforeach
         @endif
     </div>
