@@ -44,7 +44,7 @@
                 </form>
             </div>
         </div>
-        <?php dump($results); ?>
+        <?php// dump($results); //?>
         <div class="row B1 justify-content-center">
             <h1 id="lit">Featured Artists This Week!</h1>
         </div>
@@ -90,7 +90,7 @@
             @foreach($results as $artist)
                 <h2 class="content-title">{{$artist->username}} </h2>
                 <p class="content-title">{{$artist->city}}, {{$artist->state}}</p>
-                <button type="button" class="btn btn-secondary" href="">connect</button>
+                <a href="/connect/"></a><button type="button" class="btn btn-secondary">connect</button></a>
                 <div id="wow"></div>
             @endforeach
         @endif

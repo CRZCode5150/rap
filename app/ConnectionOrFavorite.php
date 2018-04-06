@@ -8,12 +8,12 @@ class ConnectionOrFavorite extends Model
 {
     protected $table = 'connections_or_favorites';
 
-    public function sender()
+    public function senderInfo()
     {
         return $this->hasOne('App\User', 'id', 'sender');
     }
 
-    public function receiver()
+    public function receiverInfo()
     {
         return $this->hasOne('App\User', 'id', 'receiver');
     }

@@ -40,9 +40,9 @@
 body{
     background-color: black;
     background-image: url(Images/ProfilePageBackground.gif);
-     background-size:75%;
+    background-size:75%;
      /* margin-top:12%; */
-     background-repeat: no-repeat;
+    background-repeat: no-repeat;
 }
 img{
 
@@ -97,29 +97,20 @@ table{
             </tr>
           </thead>
           <tbody>
+            @foreach($connectionsOrFavorites as $newconnection)
+                @if ($newconnection->receiver != Auth::id())
+                        <tr class="text-capitalize">
+                          <th scope="row">1</th>
+                          <td>{{$newconnection->receiverInfo->username}}</td>
+                          <td>{{$newconnection->receiverInfo->firstname}}</td>
+                          <td>{{$newconnection->receiverInfo->lastname}}</td>
+                          <td>{{$newconnection->receiverInfo->city}}</td>
+                          <td>{{$newconnection->receiverInfo->state}}</td>
+                          <td>{{$newconnection->receiverInfo->zipcode}}</td>
 
-            <tr class="text-capitalize">
-              <th scope="row">1</th>
-              <td>{{$user->username}}</td>
-              <td>{{$user->firstname}}</td>
-              <td>{{$user->lastname}}</td>
-              <td>{{$user->city}}</td>
-              <td>{{$user->state}}</td>
-              <td>{{$user->zipcode}}</td>
-
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td></td>
-              <td></td>
-
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td></td>
-              <td></td>
-
-            </tr>
+                        </tr>
+                @endif
+            @endforeach
           </tbody>
         </table>
 
