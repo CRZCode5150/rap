@@ -68,7 +68,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">Kendrick Lamar</span>
                             <span class="profile__description__info">Top-Dawg-Entertainment</span>
-                            <button type="button" class="btn btn-dark">Connect</button>
+                            <a href="/connect/4"><button type="button" class="btn btn-dark">Connect</button></a>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         <div class="profile__description">
                             <span class="profile__description__name">MF Doom</span>
                             <span class="profile__description__info">Rap's SuperVillian</span>
-                            <button type="button" class="btn btn-dark">Connect</button>
+                            <a href="/connect/5"><button type="button" class="btn btn-dark">Connect</button></a>
                         </div>
                     </div>
                 </div>
